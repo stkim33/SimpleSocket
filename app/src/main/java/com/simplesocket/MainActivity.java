@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        String test;
+        
         //Socket Init(Tcp Init)
         m_RecvHandler  = new RecvSocketHandler(m_SimpleSocket, getApplicationContext());
         m_SimpleSocket = new BaseSocket(m_RecvHandler, getApplicationContext(), SocketDefine.SOCKET_TCP);
