@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        String test;
         
         //Socket Init(Tcp Init)
         m_RecvHandler  = new RecvSocketHandler(m_SimpleSocket, getApplicationContext());
