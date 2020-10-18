@@ -47,7 +47,7 @@
         }
     }
 ```
-
+ 
 ####  Simple Socket Recv MsgFunc
 ```Java
     public void run(){
