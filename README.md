@@ -1,7 +1,7 @@
 ## SimpleSocket 
 
 ### Language : Java
-### IDE : Android Studio
+### IDE : Android Studio, SDK Version : 29
 
 #### Simple Socket Connection Object Init
 
