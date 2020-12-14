@@ -34,11 +34,19 @@
    public void SendMsg(int nSockcode, String SockValue)
     {
         try {
+            // Socket Coonect Chk
             if (m_SimpleSocket.GetConnect() == true) {
-                TcpSocket pSocket = (TcpSocket) m_SimpleSocket.GetSocket();
+                // socket Obj Get
+                TcpSsocketocket pSocket = (TcpSocket) m_SimpleSocket.GetSocket();
+                
+                // socket Protocal Code
                 if(nSockcode != SocketDefine.SOCKET_NOT_PROTOCAL )
                     pSocket.GetDataOutputStream().writeInt(nSockcode);
+                
+                // socket Value
                 pSocket.GetDataOutputStream().writeInt(SockValue.length());
+                
+                // Send
                 pSocket.send(SockValue.getBytes());
             }
         }
